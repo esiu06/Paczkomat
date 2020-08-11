@@ -1,0 +1,9 @@
+1) 1) baza danych klient-paczka (klient z przypisanym emailem na który przesy³any jest kod),
+ z uwzglêdnieniem sprawdzania czy dla klient anie ma wielu paczek (to drugie do przemyœlenia);
+2) program generuj¹cy kod i przesy³aj¹cy na wpisanego maila;
+3) komunikacja klient-paczkomat
+a) program potwierdzaj¹cy komunikacjê – weryfikacj¹ za pomoc¹ has³a
+4) program wydaj¹cy paczkê (sprawdza kod paczki wpisany, ³¹czy go z paczk¹ klienta, 
+wysy³a powiadomienie do programu wysy³aj¹cego zwrotn¹ informacjê);
+5) program wysy³aj¹cy zwrotnego maila  informacj¹ o odebraniu paczki 
+ent-paczka, z uwglêdnieniem sprawdzania czy dla klient anie ma wielu paczek (to drugie do premyœlenia) 
