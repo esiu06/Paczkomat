@@ -1,0 +1,26 @@
+### Git Tutorial for Beginners: Command-Line Fundamentals by Corey Schafer
+### Cheatsheet by Michal Sapinski
+
+### CHECK IF YOU HAVE GIT INSTALLED ###
+git --version
+### CONFIGURE YOUR GIT BEFORE YOU START ###
+git config --global user.name "<name>" #sets your user.name so others can recognize you
+git config --global user.email "<email>" # sets your email address (see above)
+git config -- list  #lists configuration of your git
+### NEED HELP ? ###
+git help <verb>
+git <verb> --help
+# eg. git help config
+# or git config --help
+### INITIALIZE REPOSITORY FROM EXISTING CODE/PROJECT ###
+git init   # type it in your local repository directory
+rm -rf .git  # stops tracking your project with git
+## BEFORE FIRST COMMITS ###
+git status
+git add -A # adds all untracked files that you made changes to (which you can display with 'git status') to staging area
+git reset # to remove files from staging area
+
+
+
+
+
