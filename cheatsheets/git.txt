@@ -1,7 +1,6 @@
-### Git Tutorial for Beginners: Command-Line Fundamentals by Corey Schafer
-### Cheatsheet by Michal Sapinski
+### based on "Git Tutorial for Beginners: Command-Line Fundamentals by Corey Schafer"
 
-### CHECK IF YOU HAVE GIT INSTALLED ###
+### THIS IS HOW TO CHECK IF YOU HAVE GIT INSTALLED ###
 git --version
 ### CONFIGURE YOUR GIT BEFORE YOU START ###
 git config --global user.name "<name>" #sets your user.name so others can recognize you
@@ -19,6 +18,44 @@ rm -rf .git  # stops tracking your project with git
 git status
 git add -A # adds all untracked files that you made changes to (which you can display with 'git status') to staging area
 git reset # to remove files from staging area
+git log # lists your commits history
+### FETCHING REMOTE REPOSITORIES TO YOUR LOCAL REPO
+git clone <url> <where to clone>
+### Viewing information about the remote repository ###
+git remote -v
+git branch -a
+### Pushing changes ###
+## commit changes like we did previously:
+git diff
+git status
+git add -A
+git commit -m "Modified getReceiveCode method"
+# then push:
+git pull origin master #remember to first pull current state of remote repo
+git push origin master
+
+################ COMMON WORKFLOW IN GIT ######################
+### CREATE A BRANCH FOR DESIRED FEATURE ###
+git branch parcel-rcv-auth
+git checkout parcel-rcv-auth
+### after commit push branch to remote ###
+git push -u origin parcel-rcv-auth
+git branch -a
+### MERGE A BRANCH ###
+git checkout master
+git pull origin master
+git branch --merged
+git merge calc-divide
+git push origin master
+### DELETING A BRANCH ###
+git branch -d parcel-rcv-auth
+git branch -a
+git push origin --delete parcel-rcv-auth
+
+
+
+
+
 
 
 
